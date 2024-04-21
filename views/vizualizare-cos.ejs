@@ -1,0 +1,37 @@
+<h1>Coș</h1>
+<table style="font-size: x-large;">
+  <tr>
+    <th>ID</th>
+    <th>Nume</th>
+    <th>Preț</th>
+    <th>Cantitate</th>
+  </tr>
+  <% let total=0 %>
+    <%if(objects !=null) {%>
+      <% objects.forEach(function(obj) { %>
+        <tr>
+          <td>
+            <%= obj.id %>
+          </td>
+          <td>
+            <%= obj.nume %>
+          </td>
+          <td>
+            <%= obj.pret %>
+          </td>
+          <td>
+            <%= obj.nrProduse %>
+          </td>
+        </tr>
+        <% total +=obj.pret * obj.nrProduse %>
+          <% });} %>
+</table>
+<br>
+<table class="tabel,th,td" style="font-weight: 800; font-size: x-large;">
+  <tr>
+    <td>Total: </td>
+    <td>
+      <%= total %>lei
+    </td>
+  </tr>
+</table>

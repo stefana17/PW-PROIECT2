@@ -1,0 +1,21 @@
+<section>
+    <br>
+    <br>
+    <form action="/verificare-autentificare" method="post">
+        <label class="label1">Nume utilizator:</label>
+        <input style="width: 15%; height: 25%; text-align: center; font-style: italic;" type="text" id="numeUtilizator"
+            placeholder="Introdu un nume de utilizator" name="numeUtilizator">
+        <br><br>
+        <label class="label1">Parola:</label>
+        <input style="width: 12%; height: 25%; text-align: center; font-style: italic;" type="password" id="parola"
+            placeholder="Introdu o parolă puternică" name="parola">
+        <!--<br><br><button>Submit</button>-->
+        <br>
+        <input class="buton1" type="submit" value="Autentificare">
+    </form>
+    <br>
+    <br>
+    <h1 style="font-weight: 800; font-style: italic;">
+        <%=displayError %>
+    </h1>
+</section>

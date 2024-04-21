@@ -1,0 +1,52 @@
+<section>
+  <!-- <%
+    if( utilizator !== null ){ %>
+        <h2> Bine ai revenit, <%= utilizator['utilizator'] %>! </h2>
+    <% } %> -->
+  <br>
+  <br>
+  <form action="/creare-bd" method="get">
+    <button class="buton1">Creare BD</button>
+  </form>
+  <br>
+  <form action="/inserare-bd" method="get">
+    <button class="buton1">Inserare BD</button>
+  </form>
+  <br>
+  <h1>Toate produsele din tabela "produse"</h1>
+  <table class="tabel,th,td">
+    <tr>
+      <th>ID</th>
+      <th>Nume</th>
+      <th>Preț</th>
+      <th>Produs</th>
+      <% if(utilizator !=null) { %>
+        <th>Actions</th>
+        <% } %>
+    </tr>
+    <% objects.forEach(function(obj) { %>
+      <tr>
+        <td>
+          <%= obj.id %>
+        </td>
+        <td>
+          <%= obj.nume %>
+        </td>
+        <td>
+          <%= obj.pret %>
+        </td>
+        <td><img src="/imagini/<%= obj.src_img %>" style="width: 100px; height: 100px;"></td>
+        <% if(utilizator !=null) { %>
+          <td>
+            <form method="POST" action="/adauga-cos">
+              <input type="hidden" name="id" value="<%= obj.id %>">
+              <button class="buton1" type="submit">Adaugă în coș</button>
+            </form>
+          </td>
+          <% } %>
+      </tr>
+      <% }); %>
+  </table>
+  <br>
+  <a class="a1" href="vizualizare-cos">Vizualizare coș</a>
+</section>

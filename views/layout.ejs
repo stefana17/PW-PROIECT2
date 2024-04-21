@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<h1 style="text-align: center;">Componente PC</h1>
+
+<head>
+    <title id="title">Componente PC</title>
+    <link rel="stylesheet" type="text/css" href="/public/stil.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--<h1><a href="/autentificare">Autentificare</a></h1>-->
+            <a href="/">Acasă</a>
+            <a href="/chestionar">Chestionar</a>
+            <% if(utilizator !=null) { %>
+                <!--Dupa apasarea pe Logout, redirectionez catre pagina de autentificare unde se va sterge userul curent conectat-->
+                <a href="/autentificare">Delogare</a>
+
+                <% } else if (utilizator==null) { %>
+                    <a href="/autentificare">Autentificare</a>
+                    <% }%>
+        </nav>
+        <% if(utilizator !=null) { %>
+            <h1>Bine ai venit, <%= utilizator['utilizator'] %>!</h1>
+            <% }%>
+    </header>
+
+    <main>
+        <%- body -%>
+    </main>
+</body>
+
+</html>

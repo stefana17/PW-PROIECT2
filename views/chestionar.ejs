@@ -1,0 +1,21 @@
+<section>
+    <h1 style="text-align: center;">Chestionar</h1>
+    <% if(intrebari.length!=0) { %>
+        <fieldset style = "border: 2px solid">
+            <form action="/rezultat-chestionar" method="post" role="form">
+                <% intrebari.forEach(function(question, index){ %>
+                    <article class="intrebare">
+                        <h2>
+                            <%= index + 1 %>. <%= question.intrebare %>
+                        </h2>
+                        <% question.variante.forEach(function(varianta, idVarianta){ %>
+                            <input name="intrebare-<%= index %>" value="<%= idVarianta %>" type="radio" />
+                            <%= varianta %><br>
+                                <% }); %>
+                    </article>
+                    <% }); %>
+        </fieldset>
+        <br>
+        <input class="buton1" type="submit" value="Trimite chestionarul" />
+        <% } %>
+</section>

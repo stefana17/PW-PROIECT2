@@ -1,0 +1,20 @@
+{
+  "name": "proiect-2-stefanahriscu",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000p\u0000r\u0000o\u0000i\u0000e\u0000c\u0000t\u0000-\u00002\u0000-\u0000S\u0000t\u0000e\u0000f\u0000a\u0000n\u0000a\u0000H\u0000r\u0000i\u0000s\u0000c\u0000u\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hriscu Cornelia Stefana",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "sqlite3": "^5.1.6"
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "intrebari" : [
+        {
+            "intrebare": "Care din următoarele componente este responsabil pentru procesarea informațiilor într-un computer?",
+            "variante": ["Placa de bază", "Procesorul", "Placa video", "RAM"],
+            "corect": 1
+        },
+        
+        {
+            "intrebare": "Ce este RAM-ul?",
+            "variante": ["O placă grafică", "O unitate de stocare", "O memorie de acces aleatoriu", "Un procesor"],
+            "corect": 2
+        },
+        
+        {
+            "intrebare": "Ce este o unitate de sursă de alimentare?",
+            "variante": [
+                "O unitate de stocare", 
+                "O placă grafică", 
+                "O componentă care furnizează puterea electrică necesară pentru toate componentele PC-ului", 
+                "Un dispozitiv de ieșire"
+            ],
+            "corect": 2
+        },
+        
+        {
+            "intrebare": "Care dintre următoarele componente este responsabil pentru gestionarea comunicării dintre diferitele componente ale unui computer?",
+            "variante": [
+                "Procesorul", 
+                "Placa de bază", 
+                "Placa video", 
+                "RAM"
+            ],
+            "corect": 1
+        },
+        
+        {
+            "intrebare": "Care dintre următoarele componente este responsabil pentru gestionarea interacțiunii dintre un computer și perifericele sale, cum ar fi mouse-ul și tastatura?",
+            "variante": [
+                "Procesorul", 
+                "Placa de bază", 
+                "Sursa de alimentație", 
+                "Porturile de intrare/ieșire"
+            ],
+            "corect": 3
+        }
+    ]
+}
